@@ -1,0 +1,15 @@
+import java.util.*;
+//FLOYD'S Triangle pattern
+public class JavaBasics{
+    public static void main(String args[]){
+        int n=4;
+        int v=1;
+        for(int line=1;line<=n;line++){
+            for(int i=1;i<=line;i++){
+                System.out.print( " "+v+" " );
+                v++;
+            }
+            System.out.println();
+        }
+    }
+}
