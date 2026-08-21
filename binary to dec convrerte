@@ -1,0 +1,21 @@
+import java.util.*;
+//binary to dec convrerte
+
+public class JavaBasics{
+     public static void BinToDec(int binnum){
+        int decnum=0;
+        int pow=0;
+        while(binnum > 0 ){
+            int lastdigit = binnum % 10;
+            decnum= decnum  + (lastdigit* (int)Math.pow(2,pow));
+            pow++;
+            binnum=binnum/10;
+        }
+        System.out.print(binnum+ " to decimal converter is " + decnum);
+     }
+        
+    
+    public static void main(String args[]){
+      BinToDec(101);
+    }
+}
