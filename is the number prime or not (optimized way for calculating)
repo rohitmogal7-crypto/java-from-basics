@@ -1,0 +1,28 @@
+import java.util.*;
+//is the number prime or not (optimized way for calculating)
+
+public class JavaBasics{
+    
+    public static boolean prime(int n){
+        if(n==2){
+            return true;
+        }
+        for(int i=2; i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                return false;
+            }
+            
+        }
+        return true;
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        
+        System.out.print("enter value of n : ");
+        int n =sc.nextInt();
+        prime(n);
+        System.out.print("is the number n prime : " + prime(n));
+        
+        
+    }
+}
