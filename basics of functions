@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class JavaBasics{
+    public static void printHW(){
+        System.out.println("hellow world");
+        
+    }
+    public static void main(String args[]){
+     printHW();  
+    }
+}
