@@ -1,0 +1,19 @@
+import java.util.*;
+//swaping with the two values
+
+public class JavaBasics{
+    
+    public static void swap(int a,int b){
+       int temp= a;
+        a= b;
+        b=temp;
+        System.out.println("a is : "+a+" b is : "+b);
+        return;
+    }
+    public static void main(String args[]){
+        
+        int a = 20;
+        int b = 40;
+       swap(a,b);
+    }
+}
