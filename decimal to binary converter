@@ -1,0 +1,22 @@
+import java.util.*;
+//decimal to binary converter
+
+public class JavaBasics{
+     public static void DecToBin(int decnum){
+        int n=0;
+        int pow=0;
+        int m=decnum;
+        while(decnum > 0 ){
+            int rem = decnum % 2;
+            n= n  + (rem* (int)Math.pow(10,pow));
+            pow++;
+            decnum=decnum/2;
+        }
+        System.out.print(m+ " to binary converter is " + n);
+     }
+        
+    
+    public static void main(String args[]){
+      DecToBin(78);
+    }
+}
