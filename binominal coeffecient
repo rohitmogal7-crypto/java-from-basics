@@ -1,0 +1,33 @@
+import java.util.*;
+//binominal coffecient
+
+public class JavaBasics{
+    
+    public static int factorial(int x){
+        int fact=1;
+       for(int i=1;i<=x;i++){
+        fact=i*fact;
+       }
+        return fact;
+    }
+    public static int binomialcoff(int n, int r){
+        int n_fact = factorial(n);
+        int r_fact = factorial(r);
+        int nminusr_fact = factorial(n-r);
+
+        int cofficient=n_fact/(r_fact*nminusr_fact);
+        return cofficient;
+
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        
+        System.out.print("enter value of n : ");
+        int n =sc.nextInt();
+        System.out.print("enter value of r : ");
+        int r =sc.nextInt();
+
+        int cofficient=binomialcoff(n, r);
+        System.out.print("binominal coffecient is : "+ cofficient);
+    }
+}
