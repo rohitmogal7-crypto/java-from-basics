@@ -1,0 +1,28 @@
+import java.util.*;
+//WriteaJavaprogramtocheckifanumberisa palindrome inJava?(121isapalindrome, 321 is not)
+
+public class JavaBasics{
+     public static void palindrome(int a){
+        int pail=0;
+        int num=a;
+        int lastdigit=0;
+      while(a>0){
+        lastdigit=a%10;
+        pail=pail*10+lastdigit;
+        a=a/10;
+      
+      }
+      if(pail==num){
+      System.out.println("palindrome ");
+      }
+      else{
+        System.out.println("not palindrome ");
+      }
+     }
+    public static void main(String args[]){
+      Scanner sc= new Scanner(System.in);
+      System.out.print("Enter num a : ");
+      int a= sc.nextInt();
+      palindrome(a);
+    }
+}
