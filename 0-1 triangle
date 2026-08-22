@@ -1,0 +1,29 @@
+ import java.util.*;
+  //0-1 triangle
+
+  public class JavaBasics{
+      public static void inverted_rotated_pyramid_num(int trow){
+        int a=1;
+        for (int r=1; r<=trow ; r++){
+          for(int c=1; c<=r;c++){
+              if((r+c)%2==0){
+                System.out.print("1");
+              }
+              else{
+                 System.out.print("0");
+              }
+            }
+            
+          System.out.println();
+          }
+          
+        }
+    
+      public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the no of rows : ");
+        int trow=sc.nextInt();
+        
+        inverted_rotated_pyramid_num(trow);
+      }
+  }
