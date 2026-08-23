@@ -1,0 +1,50 @@
+  import java.util.*;
+  //Butterfly_pattern
+
+  public class JavaBasics{
+      public static void butterfly(int trow){
+        
+        for (int r=1; r<=trow ; r++){
+          
+              for(int j=1;j<=r;j++){
+                System.out.print("*");
+              }
+              for(int k=1;k<=2*(trow-r);k++){
+                System.out.print(" ");
+              }
+              for(int l=1;l<=r;l++){
+                System.out.print("*");
+              }
+              System.out.println();
+            }
+            
+          
+          
+          
+          
+          for (int r=trow; r>=1 ; r--){
+          
+              for(int j=1;j<=r;j++){
+                System.out.print("*");
+              }
+              for(int k=1;k<=2*(trow-r);k++){
+                System.out.print(" ");
+              }
+              for(int l=1;l<=r;l++){
+                System.out.print("*");
+              }
+            
+            
+          System.out.println();
+          
+          }
+        }
+    
+      public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the no of rows : ");
+        int trow=sc.nextInt();
+        
+        butterfly(trow);
+      }
+  }
