@@ -1,0 +1,28 @@
+  import java.util.*;
+  //Linear searching
+
+  public class JavaBasics{
+     public static int linearsearch(int marks[],int key){
+      for (int i=0;i<marks.length;i++){
+        if(marks[i]==key){
+          return i;
+        }
+        
+      }
+      return -1;
+
+     }
+      public static void main(String args[]){
+       int num[]={98,90,90};
+       int key=90;
+       
+       int index = linearsearch(num,key);
+       if(index==-1){
+        System.out.print("not found");
+       }
+       else{
+        System.out.print("Found at index : "+index);
+       }
+       
+      }
+  }
