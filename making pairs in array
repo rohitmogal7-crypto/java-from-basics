@@ -1,0 +1,19 @@
+  import java.util.*;
+  //making pairs in array
+
+  public class JavaBasics{
+     public static void reverse_array(int num[]){
+      for(int i=0;i<num.length;i++){
+        for(int j=i+1;j<num.length;j++){
+          System.out.print("( "+num[i]+", "+num[j]+" )");
+        }
+        System.out.println();
+       }
+      }
+     public static void main(String args[]){
+       int num[]={1,4,6,7,8,9,10};
+        reverse_array(num);
+
+      
+      }
+  }
