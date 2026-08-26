@@ -1,0 +1,39 @@
+  import java.util.*;
+  //reverse of an array with sawp method
+
+  public class JavaBasics{
+     public static int reverse_array(int num[]){
+      int first=0;
+      int last=num.length-1;
+      while (first<last) {
+        int temp= num[first];
+        num[first]= num[last];
+        num[last]=temp;
+
+        first++;
+        last--;
+      }
+     
+      return 0;
+        
+        
+      }
+      
+
+     
+     
+      public static void main(String args[]){
+       int num[]={1,4,6};
+        System.out.print("the array before reverse is : ");
+       for(int i=0;i<num.length;i++){
+        System.out.print("  "+num[i]);
+       }
+       System.out.println();
+       reverse_array(num);
+       System.out.print("the reverse array is : ");
+
+       for(int i=0;i<num.length;i++){
+        System.out.print("  "+num[i]);
+       }
+      }
+  }
