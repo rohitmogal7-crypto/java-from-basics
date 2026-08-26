@@ -1,0 +1,25 @@
+ import java.util.*;
+  //Sub arrays
+
+  public class JavaBasics{
+     public static void reverse_array(int num[]){
+      int tsub=0;
+      for(int i=0;i<num.length;i++){
+        for(int j=i;j<num.length;j++){
+          for(int k=i;k<=j;k++){
+            System.out.print(" "+num[k] +" ");
+          }
+          tsub++;
+          System.out.println();
+        }
+        System.out.println();
+       }
+       System.out.println("totall no of sub array is : "+tsub);
+      }
+     public static void main(String args[]){
+       int num[]={1,4,6,7};
+        reverse_array(num);
+
+      
+      }
+  }
