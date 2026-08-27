@@ -1,0 +1,23 @@
+  import java.util.*;
+  //sum of max Subarrays by kadanes algorithm
+
+  public class JavaBasics{
+     public static void subarrysSum(int num[]){
+      
+      int maxsum= Integer.MIN_VALUE;
+      int currsum=0;
+      
+      for(int i=0;i<num.length;i++){
+        currsum=currsum+num[i];
+        System.out.println(currsum);
+        maxsum=Math.max(currsum, maxsum);
+       }
+       System.out.println("the max subarrys sum is : "+maxsum);
+      }
+     public static void main(String args[]){
+       int num[]={1,4,6,7};
+        subarrysSum(num);
+
+      
+      }
+  }
