@@ -1,0 +1,30 @@
+  import java.util.*;
+  //max Subarrays sum by brute force
+
+  public class JavaBasics{
+     public static void subarrysSum(int num[]){
+      
+      int maxsum= Integer.MIN_VALUE;
+      for(int i=0;i<num.length;i++){
+        for(int j=i;j<num.length;j++){
+          int currsum=0;
+          for(int k=i;k<=j;k++){
+            currsum+=num[k];
+           
+          }
+           System.out.println(currsum);
+           if(maxsum<currsum){
+              maxsum=currsum;
+            }
+        }
+       
+       }
+       System.out.println("the max subarrys sum is : "+maxsum);
+      }
+     public static void main(String args[]){
+       int num[]={1,4,6,7};
+        subarrysSum(num);
+
+      
+      }
+  }
